@@ -16,6 +16,13 @@ import Result
 import ReactiveCocoa
 import Foundation
 
+extension Int: CustomDebugStringConvertible {
+	public var debugDescription: String {
+		return "\(self)"
+	}
+	
+}
+
 /*:
  ## Signal
  

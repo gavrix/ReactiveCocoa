@@ -165,6 +165,10 @@
 		57DC89A61C50675F00E367B7 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D03764E619EDA41200A782A9 /* UITextView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57DC89A71C50679700E367B7 /* UIButton+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D03764C819EDA41200A782A9 /* UIButton+RACCommandSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57DC89A81C50679E00E367B7 /* UICollectionReusableView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D03764CA19EDA41200A782A9 /* UICollectionReusableView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74507CE01D174AC40019F893 /* VisualDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74507CDF1D174AC40019F893 /* VisualDebug.swift */; };
+		74507CE11D174AC40019F893 /* VisualDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74507CDF1D174AC40019F893 /* VisualDebug.swift */; };
+		74507CE21D174AC40019F893 /* VisualDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74507CDF1D174AC40019F893 /* VisualDebug.swift */; };
+		74507CE31D174AC40019F893 /* VisualDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74507CDF1D174AC40019F893 /* VisualDebug.swift */; };
 		7A7065811A3F88B8001E8354 /* RACKVOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70657E1A3F88B8001E8354 /* RACKVOProxy.m */; };
 		7A7065821A3F88B8001E8354 /* RACKVOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70657E1A3F88B8001E8354 /* RACKVOProxy.m */; };
 		7A7065841A3F8967001E8354 /* RACKVOProxySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7065831A3F8967001E8354 /* RACKVOProxySpec.m */; };
@@ -910,6 +914,7 @@
 		57A4D2451BA13F9700F7D4B1 /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
 		57A4D2461BA13F9700F7D4B1 /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		57A4D2471BA13F9700F7D4B1 /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		74507CDF1D174AC40019F893 /* VisualDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualDebug.swift; sourceTree = "<group>"; };
 		7A70657D1A3F88B8001E8354 /* RACKVOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACKVOProxy.h; sourceTree = "<group>"; };
 		7A70657E1A3F88B8001E8354 /* RACKVOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACKVOProxy.m; sourceTree = "<group>"; };
 		7A7065831A3F8967001E8354 /* RACKVOProxySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACKVOProxySpec.m; sourceTree = "<group>"; };
@@ -1785,6 +1790,7 @@
 				D871D69E1B3B29A40070F16C /* Optional.swift */,
 				D0C312C819EF2A5800984962 /* Scheduler.swift */,
 				C79B647B1CD52E23003F2376 /* EventLogger.swift */,
+				74507CDF1D174AC40019F893 /* VisualDebug.swift */,
 				D03B4A3919F4C25F009E02AC /* Signals */,
 				D03B4A3A19F4C26D009E02AC /* Internal Utilities */,
 				D03B4A3B19F4C281009E02AC /* Extensions */,
@@ -2339,6 +2345,7 @@
 				57A4D1BB1BA13D7A00F7D4B1 /* Signal.swift in Sources */,
 				57A4D1BC1BA13D7A00F7D4B1 /* SignalProducer.swift in Sources */,
 				57A4D1BD1BA13D7A00F7D4B1 /* Atomic.swift in Sources */,
+				74507CE31D174AC40019F893 /* VisualDebug.swift in Sources */,
 				57A4D1BE1BA13D7A00F7D4B1 /* Bag.swift in Sources */,
 				57A4D1BF1BA13D7A00F7D4B1 /* TupleExtensions.swift in Sources */,
 				57A4D1C01BA13D7A00F7D4B1 /* FoundationExtensions.swift in Sources */,
@@ -2564,6 +2571,7 @@
 				A9B3158F1B3940750001CB9C /* RACObjCRuntime.m in Sources */,
 				A9B315901B3940750001CB9C /* RACPassthroughSubscriber.m in Sources */,
 				A9B315911B3940750001CB9C /* RACQueueScheduler.m in Sources */,
+				74507CE21D174AC40019F893 /* VisualDebug.swift in Sources */,
 				A9B315921B3940750001CB9C /* RACReplaySubject.m in Sources */,
 				A9B315931B3940750001CB9C /* RACReturnSignal.m in Sources */,
 				A9B315941B3940750001CB9C /* RACScheduler.m in Sources */,
@@ -2640,6 +2648,7 @@
 				D85C652A1C0D84C7005A77AD /* Flatten.swift in Sources */,
 				D0C312CF19EF2A5800984962 /* Bag.swift in Sources */,
 				D037658019EDA41200A782A9 /* RACEmptySequence.m in Sources */,
+				74507CE01D174AC40019F893 /* VisualDebug.swift in Sources */,
 				D03765AA19EDA41200A782A9 /* RACObjCRuntime.m in Sources */,
 				D037654A19EDA41200A782A9 /* NSUserDefaults+RACSupport.m in Sources */,
 				D037660E19EDA41200A782A9 /* RACUnarySequence.m in Sources */,
@@ -2831,6 +2840,7 @@
 				D037665319EDA41200A782A9 /* UISwitch+RACSignalSupport.m in Sources */,
 				D037664B19EDA41200A782A9 /* UISlider+RACSignalSupport.m in Sources */,
 				D037656719EDA41200A782A9 /* RACCompoundDisposable.m in Sources */,
+				74507CE11D174AC40019F893 /* VisualDebug.swift in Sources */,
 				D037655B19EDA41200A782A9 /* RACBlockTrampoline.m in Sources */,
 				D037659119EDA41200A782A9 /* RACGroupedSignal.m in Sources */,
 				D037655F19EDA41200A782A9 /* RACChannel.m in Sources */,

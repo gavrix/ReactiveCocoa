@@ -37,7 +37,7 @@ public final class Signal<Value, Error: ErrorType> {
 		/// When set to `true`, the Signal should interrupt as soon as possible.
 		let interrupted = Atomic(false)
 
-		let observer = Observer { event in
+		let observer =  Observer { event in
 			if case .Interrupted = event {
 				// Normally we disallow recursive events, but
 				// Interrupted is kind of a special snowflake, since it
@@ -79,7 +79,7 @@ public final class Signal<Value, Error: ErrorType> {
 			}
 		}
 
-		generatorDisposable.innerDisposable = generator(observer)
+		generatorDisposable.innerDisposable = generator(ViualDebugHelper.sharedInstance.witnessObserver(observer))
 	}
 
 	/// A Signal that never sends any events to its observers.

@@ -29,7 +29,7 @@ public protocol ObserverType {
 public struct Observer<Value, Error: ErrorType> {
 	public typealias Action = Event<Value, Error> -> Void
 
-	public let action: Action
+	internal var action: Action
 
 	public init(_ action: Action) {
 		self.action = action
@@ -52,6 +52,8 @@ public struct Observer<Value, Error: ErrorType> {
 			}
 		}
 	}
+	
+	
 }
 
 extension Observer: ObserverType {
